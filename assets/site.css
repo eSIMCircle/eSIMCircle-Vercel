@@ -1,0 +1,53 @@
+
+:root{--cream:#f6f1e9;--ink:#2a2420;--muted:#6f645b;--rule:#d9cdbd;--accent:#3d6863}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font:20px/1.75 Newsreader,Georgia,serif}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:4px}a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.sc{font-variant-caps:all-small-caps;letter-spacing:.08em}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--cream);padding:6px;z-index:9}
+.head{text-align:center;padding:34px 20px 0}
+.head a.word{font:italic 400 34px/1 Newsreader,serif;color:var(--ink);text-decoration:none}
+.head p{margin:6px 0 0;font-size:15px;color:var(--muted)}
+.head nav{margin:16px auto 0;max-width:620px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:8px 0;display:flex;justify-content:center;flex-wrap:wrap;gap:4px 24px;font-size:16px}
+.head nav a{color:var(--ink);text-decoration:none;font-variant-caps:all-small-caps;letter-spacing:.08em}.head nav a:hover{color:var(--accent)}
+.col{max-width:640px;margin:0 auto;padding:0 22px}
+.crumbs{font-size:14px;color:var(--muted);text-align:center;margin:26px 0 0}.crumbs a{color:var(--muted)}
+.top{text-align:center;padding:26px 0 18px}
+.kick{font-size:16px;color:var(--accent);font-variant-caps:all-small-caps;letter-spacing:.1em;margin:0 0 10px}
+h1{font:400 clamp(32px,4.6vw,42px)/1.15 Newsreader,serif;margin:0 0 14px;letter-spacing:-.005em}
+.dek{font-style:italic;color:#4f463f;margin:0 0 14px;font-size:21px}
+.when{font-size:15px;color:var(--muted)}
+.orn{text-align:center;color:var(--muted);letter-spacing:.6em;margin:26px 0;font-size:16px}
+article h2{font:italic 400 28px/1.3 Newsreader,serif;margin:44px 0 10px}
+article h3{font:600 20px/1.4 Newsreader,serif;margin:28px 0 4px}
+article p{margin:0 0 20px}
+article ul{list-style:none;padding:0;margin:0 0 22px}article ul li{padding-left:20px;position:relative;margin:6px 0}
+article ul li:before{content:"\00B7";position:absolute;left:4px;color:var(--accent);font-weight:600}
+article ol{margin:0 0 22px;padding-left:26px}article ol li{margin:6px 0}
+.aside{margin:24px 0 24px 0;padding:2px 0 2px 20px;border-left:1px solid var(--accent);font-style:italic;color:#4a423b}
+.tw{overflow-x:auto;margin:20px 0 26px}
+table{border-collapse:collapse;width:100%;font-size:17px}
+th{font-weight:400;font-variant-caps:all-small-caps;letter-spacing:.08em;color:var(--muted);text-align:left;padding:6px 10px 6px 0;border-bottom:1px solid var(--ink)}
+td{padding:8px 10px 8px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+.pricelist{list-style:none;padding:0;margin:8px 0 26px;font-size:18px}
+.pricelist li{display:flex;align-items:baseline;gap:8px;padding:5px 0}
+.pricelist .dots{flex:1;border-bottom:1px dotted var(--muted);transform:translateY(-5px);min-width:20px}
+.pricelist .sp{color:var(--muted);font-size:15px;margin-left:6px}
+.facts{margin:24px 0 30px;font-size:17px}.facts div{display:flex;gap:14px;border-bottom:1px solid var(--rule);padding:7px 0}
+.facts dt{font-variant-caps:all-small-caps;letter-spacing:.08em;color:var(--muted);min-width:170px}.facts dd{margin:0}
+.closing{text-align:center;font-style:italic;margin:30px 0}
+.qa p.q{font-style:italic;margin:22px 0 4px;font-size:21px}.qa p.a{margin:0 0 10px}
+.reading{margin:44px 0 0;border-top:1px solid var(--rule);padding-top:8px}
+.reading ol{padding-left:24px;margin:0}.reading li{margin:10px 0}.reading .src{display:block;font-size:15px;color:var(--muted);font-variant-caps:all-small-caps;letter-spacing:.08em}
+.also{font-size:17px;margin:36px 0 0}.also h2{font:italic 400 22px/1.3 Newsreader,serif;margin:0 0 6px}
+.foot{margin-top:60px;border-top:1px solid var(--rule);text-align:center;font-size:15px;color:var(--muted);padding:26px 22px 46px}
+.foot p{max-width:560px;margin:0 auto 10px}.foot a{color:var(--muted)}.foot .links,.foot .soc{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 16px;margin:8px 0}
+/* index */
+.essays{list-style:none;padding:0;margin:20px 0 0}
+.essays li{border-top:1px solid var(--rule);padding:18px 0}
+.essays .kick{display:block;margin:0 0 2px}
+.essays a{font-size:24px;line-height:1.3;color:var(--ink);text-decoration:none}.essays a:hover{color:var(--accent)}
+.essays p{margin:4px 0 0;font-size:18px;color:#4f463f}
+.letters p{margin:0 0 12px;font-size:17px;line-height:1.7}.letters b{font-weight:600;color:var(--accent);margin-right:6px}
+@media (max-width:600px){body{font-size:19px}.facts div{display:block}.facts dt{min-width:0}}
