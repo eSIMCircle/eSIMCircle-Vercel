@@ -51,3 +51,11 @@ td{padding:8px 10px 8px 0;border-bottom:1px solid var(--rule);vertical-align:top
 .essays p{margin:4px 0 0;font-size:18px;color:#4f463f}
 .letters p{margin:0 0 12px;font-size:17px;line-height:1.7}.letters b{font-weight:600;color:var(--accent);margin-right:6px}
 @media (max-width:600px){body{font-size:19px}.facts div{display:block}.facts dt{min-width:0}}
+
+/* figures */
+.hero{max-width:980px;margin:0 auto 18px;padding:0}
+.hero img,.inline img{display:block;width:100%;height:auto;background:#0001}
+.inline{margin:26px 0;clear:both;grid-column:1/-1}
+figure{margin:20px 0}
+figcaption{font-size:.82em;line-height:1.45;opacity:.72;margin-top:7px}
+figcaption a{color:inherit}
